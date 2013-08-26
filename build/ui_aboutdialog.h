@@ -75,7 +75,7 @@ public:
         versionLabel = new QLabel(AboutDialog);
         versionLabel->setObjectName(QString::fromUtf8("versionLabel"));
         versionLabel->setCursor(QCursor(Qt::IBeamCursor));
-        versionLabel->setText(QString::fromUtf8("0.3.666-beta"));
+        versionLabel->setText(QString::fromUtf8("1.1.13-beta"));
         versionLabel->setTextFormat(Qt::RichText);
         versionLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
@@ -122,19 +122,7 @@ public:
     {
         AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About PiCoin", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("AboutDialog", "<b>PiCoin</b> version", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("AboutDialog", "\n"
-"          Copyright \302\251 2009-2012 Bitcoin Developers\n"
-"          Copyright \302\251 2011-2012 Litecoin Developers\n"
-"          Copyright \302\251 2013 adam m!\n"
-"\n"
-"          This is experimental software.\n"
-"\n"
-"          Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.\n"
-"\n"
-"          This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.\n"
-"\n"
-"          Website: andarazoroflove.org\n"
-"        ", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("AboutDialog", "<html><head/><body><p>Copyright \302\251 2009-2012 Bitcoin Developers</p><p>Copyright \302\251 2011-2012 Litecoin Developers</p><p>Copyright \302\251 2013 bongzilla</p><p>This is experimental software.</p><p>Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.<br/>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</p><p><br/>Website: bongzilla.github.io/PiCoin/</p><p><br/></p></body></html>", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
